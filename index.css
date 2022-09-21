@@ -1,0 +1,11 @@
+/* Use dark mode with black background & white text. */
+body {
+    padding: 50px;
+    background-color: #000000;
+    font-family: 'Poppins';
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
