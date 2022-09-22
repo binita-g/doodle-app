@@ -1,37 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
+    <head>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
     <script src="./app.js"></script>
     <title>Doodle</title>
-  </head>
-  <body>
-    <h1>Doodle</h1>
+    </head>
+    <body>
+    <h1>Select your preferred times</h1>
+    <h2>We’ll let you know when the organizer picks the best time</h2>
     <div class="container">
         <table>
             <tr>
-              <th></th>
-              <th>Wednesday, September 21 9am-11am</th>
-              <th>Wednesday, September 21 11am-1pm</th>
+                <th id="blank"></th>
+                <th>
+                    WED 
+                    <br>
+                    21
+                    <br>
+                    SEP
+                    <br>
+                    9am-11am
+                </th>
+                <th>
+                    WED 
+                    <br>
+                    21
+                    <br>
+                    SEP
+                    <br>
+                    11am-1pm
+                </th>
             </tr>
             <tr>
-              <td>You</td>
-              <td>?</td>
-              <td>?</td>
+                <td>You</td>
+                <td><input type="checkbox" class="isAvail"></td>
+                <td><input type="checkbox" class="isAvail"></td>
             </tr>
             <tr>
-              <td>Joe Jonas</td>
-              <td>Available</td>
-              <td>Available</td>
+                <td id="blank"></td>
+                <td>1 &#10004;</td>
+                <td>2 &#10004;</td>
+            </tr>
+            <tr>
+                <td>Joe Jonas</td>
+                <td class="available">&#10004;</td>
+                <td class="available">&#10004;</td>
             </tr>
             <tr>
                 <td>Kevin Jonas</td>
-                <td>Unavailable</td>
-                <td>Available</td>
-              </tr>
-          </table>
+                <td class="unavailable">&#10005;</td>
+                <td class="available">&#10004;</td>
+                </tr>
+            </table>
     </div>
-  </body>
+    <p>&#10004; Yes</p>
+    <p>(-) If need be</p>
+    <a href="../redirect.html">
+        <button>Submit</button>
+    </a>
+    </body>
+    <script>
+        init();
+    </script>
 </html>
 
