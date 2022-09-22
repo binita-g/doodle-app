@@ -34,3 +34,7 @@ Available on:
 ```
 
 Copy and paste either of those addresses into your browser. The default is ```http://127.0.0.1:8080``` or equivalently, ```http://localhost:8080/```. You should now be able to see the Doodle app in your browser!
+
+## Citations
+Code is all original, some concepts are from
+https://css-tricks.com/indeterminate-checkboxes/ and https://stackoverflow.com/questions/24322599/why-cannot-change-checkbox-color-whatever-i-do/69057542#69057542
