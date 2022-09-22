@@ -1,4 +1,4 @@
-/* Use dark mode with black background & white text. */
+/* Style body */
 body {
     padding: 50px;
     font-family: 'Poppins';
@@ -9,11 +9,13 @@ h1 {
     text-align: center;
 }
 
+/* Style checkboxes */
 input {
     cursor: pointer;
     accent-color: lightgreen;
 }
 
+/* Style submit button */
 button {
     width: 200px;
     height: 50px;
@@ -30,6 +32,7 @@ button:hover {
     border: 3px solid #70c6e3;
 }
 
+/* Remove borders from blank cells */
 #blank {
     border: none;
 }
@@ -39,6 +42,7 @@ button:hover {
     justify-content: center;
 }
 
+/* Style background colors based on availability */
 .available {
     background-color: lightgreen;
 }
@@ -47,6 +51,7 @@ button:hover {
     background-color: lightgrey;
 }
 
+/* Style table */
 table {
     width: 60%;
 }

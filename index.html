@@ -7,58 +7,70 @@
     <title>Doodle</title>
     </head>
     <body>
-    <h1>Select your preferred times</h1>
-    <h2>We’ll let you know when the organizer picks the best time</h2>
-    <div class="container">
-        <table>
-            <tr>
-                <th id="blank"></th>
-                <th>
-                    WED 
-                    <br>
-                    21
-                    <br>
-                    SEP
-                    <br>
-                    9am-11am
-                </th>
-                <th>
-                    WED 
-                    <br>
-                    21
-                    <br>
-                    SEP
-                    <br>
-                    11am-1pm
-                </th>
-            </tr>
-            <tr>
-                <td>You</td>
-                <td><input type="checkbox" class="isAvail"></td>
-                <td><input type="checkbox" class="isAvail"></td>
-            </tr>
-            <tr>
-                <td id="blank"></td>
-                <td>1 &#10004;</td>
-                <td>2 &#10004;</td>
-            </tr>
-            <tr>
-                <td>Joe Jonas</td>
-                <td class="available">&#10004;</td>
-                <td class="available">&#10004;</td>
-            </tr>
-            <tr>
-                <td>Kevin Jonas</td>
-                <td class="unavailable">&#10005;</td>
-                <td class="available">&#10004;</td>
+        <!-- Mimic headings from Doodle-->
+        <h1>Select your preferred times</h1>
+        <h2>We’ll let you know when the organizer picks the best time</h2>
+
+        <!-- Flex container to center items -->
+        <div class="container">
+            <table>
+                <tr>
+                    <!-- Leave the first cell blank to mimic Doodle layout -->
+                    <th id="blank"></th>
+                    <!-- Cells for scheduling headings -->
+                    <th>
+                        WED 
+                        <br>
+                        21
+                        <br>
+                        SEP
+                        <br>
+                        9am-11am
+                    </th>
+                    <th>
+                        WED 
+                        <br>
+                        21
+                        <br>
+                        SEP
+                        <br>
+                        11am-1pm
+                    </th>
                 </tr>
-            </table>
-    </div>
-    <p>&#10004; Yes</p>
-    <p>(-) If need be</p>
-    <a href="../redirect.html">
-        <button>Submit</button>
-    </a>
+                <!-- Row for your availability with dynamic checkboxes -->
+                <tr>
+                    <td>You</td>
+                    <td><input type="checkbox" class="isAvail"></td>
+                    <td><input type="checkbox" class="isAvail"></td>
+                </tr>
+                <!-- Row for number of people who have responded "yes" -->
+                <tr>
+                    <td id="blank"></td>
+                    <td>1 &#10004;</td>
+                    <td>2 &#10004;</td>
+                </tr>
+                <!-- Rows with other participants' availabilities -->
+                <tr>
+                    <td>Joe Jonas</td>
+                    <td class="available">&#10004;</td>
+                    <td class="available">&#10004;</td>
+                </tr>
+                <tr>
+                    <td>Kevin Jonas</td>
+                    <td class="unavailable">&#10005;</td>
+                    <td class="available">&#10004;</td>
+                    </tr>
+                </table>
+        </div>
+        
+        <!-- Key for what the checkboxes mean -->
+        <p>&#10004; Yes</p>
+        <p>(-) If need be</p>
+
+        <!-- Submit button will redirect to static page -->
+        <a href="../redirect.html">
+            <button>Submit</button>
+        </a>
     </body>
     <script>
         init();
